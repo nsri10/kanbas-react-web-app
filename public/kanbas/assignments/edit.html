@@ -1,186 +1,364 @@
-
-<table width="100%"">
-    <tbody>
-        <tr>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="/kanbas/profile/index.html">Account</a>
-                    </li>
-                    <li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="/kanbas/home.html">Courses</a>
-                    </li>
-                    <li>
-                        <a href="#">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="#">Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="/kanbas/home.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="/kanbas/home.html">Modules</a>
-                    </li>
-                    <li>
-                        <a href="#">Piazza</a>
-                    </li>
-                    <li>
-                        <a href="#">Zoom Meetings</a>
-                    </li>
-                    <li>
-                        <a href="/kanbas/assignments/index.html">Assigments</a>
-                    </li>
-                    <li>
-                        <a href="#">Quizzes</a>
-                    </li>
-                    <li>
-                        <a href="/kanbas/grades.html">Grades</a>
-                    </li>
-                    <li>
-                        <a href="#">People</a>
-                    </li>
-                    <li>
-                        <a href="#">Panopto Video</a>
-                    </li>
-                    <li>
-                        <a href="#">Discussions</a>
-                    </li>
-                    <li>
-                        <a href="#">Announcements</a>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                    </li>
-                    <li>
-                        <a href="#">Files</a>
-                    </li>
-                    <li>
-                        <a href="#">Rubrics</a>
-                    </li>
-                    <li>
-                        <a href="#">Outcomes</a>
-                    </li>
-                    <li>
-                        <a href="#">Collaborations</a>
-                    </li>
-                    <li>
-                        <a href="#">Syllabus</a>
-                    </li>
-                    <li>
-                        <a href="#">Settings</a>
-                    </li>
-                </ul>
-            </td>
-    <td valign="top">
-
-
-<label for="assignmentName">Assignment Name</label> 
-<div>
-    <input 
-    id = "assignmentName"
-    title = "This is name of assignment"
-    value = "A1 - HTML"
-    placeholder = "Assignment 1"
-    />
-</div>
-
-<label>Description</label>
-<br />
-<textarea> This is the description of the assignment </textarea>
-<div>
-    Points
-    <input type="number" value="98" max="100" min="0" step="5"/>
-</div>
-<br/>
-Assignment Group
-<select>
-    <option>ASSIGNMENTS</option>
-</select>
-<br/>
-<br/>
-Display Grade as
-<select>
-    <option>Percentage</option>
-</select>
-<br/>
-<br/>
-Submission Type 
-<select>
-    <option>Online</option>
-</select>
-<br/>
-<br/>
-Online Entry Options <br/>
-<input type="checkbox" /> Text Entry <br/>
-<input type="checkbox" />  Website URL <br/>
-<input type="checkbox" /> Media Recordings <br/>
-<input type="checkbox" /> Student Annotations <br/>
-<input type="checkbox" /> File Uploads <br/>
-<br/>
-
-Submission Attempts 
-<select>
-    <option>Unlimited</option>
-</select>
-<br/>
-<br/>
-Plagiarism Review 
-<select>
-    <option>None</option>
-</select>
-<br/>
-<br/>
-Group Assignment <br/>
-<input type="checkbox" /> This is a group assignment <br/>
-<br/>
-
-Peer Reviews <br/>
-<input type="checkbox" /> Require Peer Reviews <br/>
-<br/>
-Assign to <br/>
-<input type="text" value="Everyone"/>
-<br/>
-<br/>
-Due <br/>
-<input type="date" value="2021-01-01"/>
-<br/>
-<br/>
-Available from <br/>
-<input type="date" value="2021-01-01"/>
-<br/>
-<br/>
-Until <br/>
-<input type="date" value="2021-01-01"/>
-<br/>
-<br/>
-<form action="/kanbas/assignments/index.html">
-<button>Cancel</button>
-<button>Save</button>
-</form>
-<div>
+<html>
+<head>
+    <link href="home.css" rel="stylesheet"/>
+    <link href="../../vendors/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
     
-</div>
-</td>
-</tr>
-</tbody>
-</table>
+</head>
+<body>
+    <html>
+        <head>
+            <link href="/kanbas/home.css" rel="stylesheet"/>
+            <link href="/vendors/css/bootstrap.min.css" rel="stylesheet"/>
+            <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+        </head>
+        <body>
+            <div class="wrapper">
+                <div class="navbar">
+                    <ul class="a">
+                        <div class="wd-bg-color-black center">
+                            <li>
+                                <img width="70" src="https://brand.northeastern.edu/wp-content/uploads/2022/05/red_monogram.png">
+                            </li>
+                        </div>
+                        <div class="wd-bg-color-black wd-padding-fat">
+                            <li>
+                                <a class="wd-fg-color-white center" href="/kanbas/profile/index.html">
+                                    <i class="fas fa-user fa-2x center wd-padding-top" style="color: gray;">
+                                    </i> <br> <p >Account</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="wd-bg-color-black wd-padding-fat">
+                            <li>
+                                <a class="wd-fg-color-white center" href="/kanbas/dashboard.html">
+                                <i class="fas fa-tachometer-alt fa-2x center wd-padding-fat" style="color:#d41b2c"></i> <br>
+                                <p>Dashboard</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="wd-bg-color-white wd-padding-fat">
+                            <li>
+                                <a class="wd-fg-color-black center" href="/kanbas/home.html">
+                                    <i class="fas fa-book fa-2x center wd-padding-fat" style="color:#d41b2c"></i> <br>
+                                    <p>Courses</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="wd-bg-color-black wd-padding-fat">
+                            <li>
+                                
+                                <a class="wd-fg-color-white center" href="#"><i class="fas fa-user-friends fa-2x center wd-padding-fat" style="color:#d41b2c"></i> <br>
+                                    <p>Groups</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="wd-bg-color-black wd-padding-fat">
+                            <li>
+                                <a class="wd-fg-color-white center" href="#">
+                                    <i class="far fa-calendar fa-2x center wd-padding-fat" style="color:#d41b2c"></i> <br>
+                                    <p>Calendar</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="wd-bg-color-black wd-padding-fat">
+                            <li>
+                                <a class="wd-fg-color-white center" href="#">
+                                    <i class="fas fa-envelope-open-text fa-2x center wd-padding-fat" style="color:#d41b2c"></i> <br>
+                                    <p>Inbox</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="wd-bg-color-black wd-padding-fat">
+                            <li>
+                                <a class="wd-fg-color-white center" href="#">
+                                    <i class="far fa-clock fa-2x center wd-padding-fat" style="color:#d41b2c"></i> <br>
+                                    <p>History</p></a>
+                            </li>
+                        </div>
+                        <div class="wd-bg-color-black wd-padding-fat">
+                            <li>
+                                <a class="wd-fg-color-white center" href="#">
+                                    <i class="far fa-play-circle fa-2x center wd-padding-fat" style="color:#d41b2c"></i> <br>
+                                    <p>Studio</p></a>
+                            </li>
+                        </div>
+                        <div class="wd-bg-color-black wd-padding-fat">
+                            <li>
+                                <a class="wd-fg-color-white center" href="#">
+                                    <i class="fas fa-share fa-2x center wd-padding-fat" style="color:#d41b2c"></i> <br>
+                                    <p>Commons</p></a>
+                            </li>
+                        </div>
+                        <div class="wd-bg-color-black wd-padding-fat">
+                            <li>
+                                <a class="wd-fg-color-white center" href="#">
+                                    <i class="far fa-question-circle fa-2x center wd-padding-fat" style="color:#d41b2c"></i> <br>
+                                    <p>Help</p></a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                    
+                <div class="content-wrapper">
+                    <div class="header">
+                        <a class="wd-fg-color-red" href="/kanbas/navpopout.html"> 
+                            <i class="fas fa-bars fa-2x" style="color:#b52828; margin: 30px"></i></a> <br>
+                        <nav style="--bs-breadcrumb-divider:'>'" aria-label= "breadcrumb">
+                            <ol style="margin-top:32px; font-size: 1.125rem;" class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a style="text-decoration: none;" href="#">
+                                        <div class="wd-fg-color-red">CS4550.12631.202410</div>
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a style="text-decoration: none;" href="/kanbas/assignments/index.html">
+                                        <div class="wd-fg-color-red">Assignments</div>
+                                    </a>
+                                </li>
+                                <li class= "breadcrumb-item active" aria-current="page">A1</1i>
+                             </ol>
+                         </nav>
+                    </div>
+                    <hr/>
+                    <div class="content">
+                        <div class="column1">
+                            <ul class="b">
+                                <li>
+                                    <a class="wd-fg-color-red" href="/kanbas/home.html">
+                                        <p>Home</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-red" href="/kanbas/home.html">
+                                        <p>Modules</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-red" href="/kanbas/test.html">
+                                        <p>Piazza</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-red" href="#">
+                                        <p>Zoom Meetings</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-black" href="/kanbas/assignments/index.html">
+                                        <div class="vl"></div><p>Assigments</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-red" href="#">
+                                        <p>Quizzes</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-red" href="/kanbas/grades.html">
+                                        <p>Grades</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-red" href="#">
+                                        <p>People</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-red" href="#">
+                                        <p>Panopto Video</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-red" href="#">
+                                        <p>Discussions</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-red" href="#">
+                                        <p>Announcements</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-red" href="#">
+                                        <p>Pages</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-red" href="#">
+                                        <p>Files</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-red" href="#">
+                                        <p>Rubrics</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-red" href="#">
+                                        <p>Outcomes</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-red" href="#">
+                                        <p>Collaborations</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-red" href="#">
+                                        <p>Syllabus</p></a>
+                                </li>
+                                <li>
+                                    <a class="wd-fg-color-red" href="#">
+                                        <p>Settings</p></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column2">
+                            <button class="btn1 float-end" style="margin-left: 5px;">
+                                <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                            </button>
+                
+                            <span class="float-end" style="color: green;margin-top: 7px;margin-right: -150px;">
+                                <i class="fas fa-check-circle" style="color:green"></i>
+                                Published
+                            </span>
+                
+                            <hr style="margin-top: 50px;" />
+                
+                            <label for="assignmentName" class="form-label">Assignment Name</label>
+                            <input class="form-control" id="assignmentName" type="text" value="A1 + ENV + HTML" />
+                
+                            <textarea class="form-control" cols="25" rows="5" style="margin-top: 25px;">This is the assignment description
+                            </textarea><br /><br />
+                
+                
+                            <div class="row g-2">
+                                <label class="form-label col-3" style="text-align: end;">Points</label>
+                                <input class="form-control col-9" id="aPoints" value="100" type="number" style="width: 50%;" />
+                            </div>
+                <br>
+                            <div class="row">
+                                <label class="form-label col-3" style="text-align: end;">Assignment Group</label>
+                
+                                <select class="form-control col-9" style="width: 50%;">
+                                    <option selected>ASSIGNMENTS</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <label class="form-label col-3" style="text-align: end;">Display Grade as</label>
+                
+                                <select class="form-control col-9" style="width: 50%;">
+                                    <option selected>Percentage</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div style="padding-left: 25%;">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Do not count the assignment towards the final grade
+                                    </label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <label class="form-label col-3" style="text-align: end;">Submission Type</label>
+                
+                                <div class="col-9" style="border-color: lightgrey;border-style: solid;width: 50%;padding: 20px;">
+                                    <select class="form-control col-9" style="width: 50%">
+                                        <option selected>Online</option>
+                                    </select>
+                                    <br>
+                                    <label style="font-weight:bold;">Online Entry Options</label><br />
+                
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="text">
+                                        <label class="form-check-label" for="text">
+                                            Text Entry
+                                        </label>
+                                    </div>
+                                    
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="url">
+                                        <label class="form-check-label" for="url">
+                                            Website URL
+                                        </label>
+                                    </div>
+                                    
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="rec">
+                                        <label class="form-check-label" for="rec">
+                                            Media Recordings
+                                        </label>
+                                    </div>
+                                    
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="anno">
+                                        <label class="form-check-label" for="anno">
+                                            Student Annotations
+                                        </label>
+                                    </div>
+                                    
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="file">
+                                        <label class="form-check-label" for="file">
+                                            File Uploads
+                                        </label>
+                                    </div>
+                
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <label class="form-label col-3" style="text-align: end;">Assign</label>
+                
+                                <div class="col-9" style="border-color: lightgrey;border-style: solid;width: 50%;padding: 20px;">
+                                    <div>
+                                        <label class="form-check-label" for="assignTo">
+                                            Assign To
+                                        </label>
+                                        <input class="form-control col-9" id="assignTo" value="Everyone" />
+                
+                                    </div>
+                
+                                    <br>
+                                    <div>
+                                        <label>Due</label> <br />
+                                        <input class="form-control" type="date" value="2021-01-01" /><br /><br />
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label>Available from</label> <br />
+                                            <input class="form-control col-6" type="date" value="2021-01-01"
+                                                style="display: inline;" /><br />
+                
+                                        </div>
+                                        <div class="col-6">
+                                            <label>Until</label> <br />
+                                            <input class="form-control col-6" type="date" value="2021-01-01"
+                                                style="display: inline;" /><br />
+                
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <button class="btn1 float-end" style="margin-left: 5px; width:570px; margin-top:20; margin-right:243;">
+                                            <i class="fas fa-plus"></i>
+                                            Add
+                                        </button>
+                                    </div>
+                
+                                </div>
+                            </div>
+                            <br><br>
+                            <div>
+                                <hr />
+                                <div>
+                                    <br>
+                                    <div style="padding-left: 10%;">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Notify users that this content has changed
+                                        </label>
+                                    </div>
+                                    <button class="float-end btn2" style="margin-top: -20;"><a href="index.html" class="wd-fg-color-white">
+                                        Save</a></button>
+                                    <button class="btn1" style="margin-left: 940; margin-top: -20;" ><a href="index.html"
+                                            class="wd-fg-color-black">Cancel</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
