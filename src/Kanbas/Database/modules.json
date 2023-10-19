@@ -1,0 +1,76 @@
+[
+  {
+    "_id": "M101",
+    "name": "Introduction to React",
+    "description": "Learning TypeScript and React.",
+    "course": "CS101",
+    "lessons": [
+      {
+        "_id": "L101",
+        "name": "Typescript Fundamentals",
+        "description": "Typescript Basics.",
+        "module": "M101"
+      },
+      {
+        "_id": "L102",
+        "name": "Jest",
+        "description": "Learn how to test with Jest.",
+        "module": "M101"
+      },
+      {
+        "_id": "L103",
+        "name": "React",
+        "description": "Learn the fundamentals of React.",
+        "module": "M101"
+      }
+    ]
+  },
+  {
+    "_id": "M102",
+    "name": "Understand the Codebase",
+    "description": "Understanding all the files and functionalities.",
+    "course": "CS101"
+  },
+  {
+    "_id": "M103",
+    "name": "Final Project",
+    "description": "Guidelines and Tips.",
+    "course": "CS101"
+  },
+  {
+    "_id": "M201",
+    "name": "Introduction to the course",
+    "description": "Introduction to the course.",
+    "course": "CS102"
+  },
+  {
+    "_id": "M202",
+    "name": "Learn what is Web Development",
+    "description": "Learn what is Web Development.",
+    "course": "CS102"
+  },
+  {
+    "_id": "M203",
+    "name": "Creating a development environment",
+    "description": "Creating a development environment.",
+    "course": "CS102"
+  },
+  {
+    "_id": "M301",
+    "name": "PESTEL Analysis",
+    "description": "Understanding the industry.",
+    "course": "BS103"
+  },
+  {
+    "_id": "M302",
+    "name": "Core Competencies",
+    "description": "What is and isn't competitive advantage.",
+    "course": "BS103"
+  },
+  {
+    "_id": "M303",
+    "name": "SWOT Analysis",
+    "description": "Strengths, weaknesses, opportunities, and threats.",
+    "course": "BS103"
+  }
+]

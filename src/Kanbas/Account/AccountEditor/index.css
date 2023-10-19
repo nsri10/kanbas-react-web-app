@@ -1,0 +1,266 @@
+.wd-margin-left {
+    margin-left: 10px;
+  }
+  .wd-padding-left {
+    padding-left: 5px;
+  }
+
+  ul.a {
+    list-style-type: none;
+    margin-left: -2em; 
+    }
+    ul.b {
+      list-style-type: none;
+      margin-left: -10px;
+      }
+
+   img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }  
+
+  p {
+    font: 14px;
+  }
+
+  .wd-margin-all-around {
+    margin: 30px;
+  }
+  .wd-margin-bottom {
+    margin-bottom: -5px;
+  }
+  .wd-margin-left {
+    margin-left: 100px;
+  }
+  .wd-margin-left-thin {
+    margin-left: 40px;
+  }
+  .wd-margin-top {
+    margin-top: -300px;
+  }
+  .wd-margin-top-move-down {
+    margin-top: 100px;
+  }
+
+  .wd-padding-fat {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .wd-padding-top {
+    padding-top: 10px;
+  }
+  .wd-padding-bottom {
+    padding-top: 10px;
+  }
+  .wd-border-fat {
+    border-width: 20px 30px 20px 30px; }
+  .wd-bg-color-black {
+      background-color: black;
+      font-size: 14px;
+   }
+   .wd-bg-color-white {
+    background-color: white;
+    font-size: 14px;
+ }
+   .wd-fg-color-white { 
+    color: white;
+    text-decoration: none !important;
+    border-bottom-style: none;
+  }
+  .wd-fg-color-black { 
+    color: black;
+    text-decoration: none !important;
+    border-bottom-style: none;
+  }
+  .wd-fg-color-black:link {
+    text-decoration: none;
+    border-bottom-style: none;
+  }
+  
+  .wd-fg-color-black:visited {
+    text-decoration: none;
+    border-bottom-style: none;
+  }
+  
+  .wd-fg-color-black:hover {
+    text-decoration: none;
+    border-bottom-style: none;
+  }
+  
+  .wd-fg-color-black:active {
+    text-decoration: none;
+    border-bottom-style: none;
+  }
+  .wd-rounded-corners-all-around {
+    border-radius: 50px;
+   }
+  .wd-pos-fixed {
+    position: fixed;
+    left: 0px;
+  }
+.center {
+  text-align: center;
+  width: 100%;
+}
+.wd-fg-color-red { 
+    color: #b52828;
+    text-decoration: none !important;
+    border-bottom-style: none;
+  }
+a {
+  text-decoration: none;
+}
+.vl {
+  border-left: 2px solid #2d3b45;
+  height: 32px;
+  font-weight: bold;
+  margin-left: -9px;
+  color:#2d3b45;
+  margin-bottom: -27px;
+}
+.float-end {
+  position: absolute;
+  right: 50px;
+  width: 300px;
+}
+.btn1 {
+  background-color: #f5f5f5; 
+  border: 1px solid #c7cdd1;
+  color: #2d3b45;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  width: fit-content;
+}
+
+.btn2 {
+  background-color: #d41b2c; 
+  border: 1px solid #d41b2c;
+  color: white;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  width: fit-content;
+}
+
+
+
+.move-buttons {
+  margin-left: 200px;
+}
+
+.font.purple {
+  color: purple;
+}
+.font.gray {
+  color: gray;
+}
+
+.remove-link {
+  text-decoration: none;
+}
+
+.card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-wrap: wrap;
+  float: left;
+}
+
+.top-margin {
+  margin-top: 60px;
+}
+
+.entire-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar {
+  display: flex;  
+  justify-content: flex-start;
+  width: 85px;
+  height: 1000px;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.header {
+  display: flex; 
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.navbar2 {
+  display: flex;  
+  justify-content: flex-start;
+  width: 200px;
+  flex-direction: column;
+}
+
+.body-flex {
+  display: flex;  
+  flex-direction: column;
+  width: 200px;
+}
+
+.end-column {
+  display: flex;  
+  flex-direction: column;
+  width: 200px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.navbar {
+  width: 85px;
+  background-color: black;
+  text-align: center;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: left;
+  height: 60px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.column1 {
+  flex: 1;
+  margin-left: -10px;
+  width: 195px;
+}
+.column2 {
+  flex: 7;
+  margin-left: 50px;
+}
+.column3 {
+  flex: 2;
+}
+
+.module-item-text{
+  font-size: 16px;
+  margin-left: 25px;  
+}

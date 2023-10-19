@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "CS101",
+    "name": "Fundamentals of Software Engineering",
+    "number": "CS4530",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15"
+  },
+  {
+    "_id": "CS102",
+    "name": "Web Development",
+    "number": "CS4550",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15"
+  },
+  {
+    "_id": "BS103",
+    "name": "Strategy in Action",
+    "number": "STRT4501",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15"
+  } 
+]
