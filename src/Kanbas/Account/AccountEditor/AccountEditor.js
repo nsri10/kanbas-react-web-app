@@ -24,7 +24,7 @@ function AccountEdit() {
                 <br/>
                 <br/>
                 <h3>Contact</h3>
-                No registered services, you can add some on the <a className="wd-fg-color-red" href="#">settings</a> page.
+                No registered services, you can add some on the settings page.
                 <br/>
                 <br/>
                 <h3>Biography</h3>
@@ -48,10 +48,10 @@ function AccountEdit() {
                     <tr>
                         <td><input type="text" value="YouTube"/></td> 
                         <td><input type="text" value="https://www.youtube.com/@WebDevTV"/>
-                    <a href="#">Remove</a></td></tr>
+                    Remove</td></tr>
                 </table>
                 </ul>
-                <a className="btn1" href="#" role="button">
+                <a className="btn1" role="button">
                         Add Another Link
                     </a>
                 <br/>

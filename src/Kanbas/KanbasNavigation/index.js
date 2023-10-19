@@ -30,7 +30,7 @@ function KanbasNavigation() {
   return (
     <div className="wd-kanbas-navigation list-group wd-padding-fat" style={{ width: 85, height: 1000 }}>
         <div class="wd-bg-color-black center">
-            <img width="70" src="https://brand.northeastern.edu/wp-content/uploads/2022/05/red_monogram.png"></img>         
+            <img width="70" alt="" src="https://brand.northeastern.edu/wp-content/uploads/2022/05/red_monogram.png"></img>         
         </div>
         <div>
         {links.map((link, index) => (

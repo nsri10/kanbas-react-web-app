@@ -5,7 +5,6 @@ import { BsFillCheckCircleFill } from "react-icons/bs";
 import { BsThreeDotsVertical } from "react-icons/bs";
 function AssignmentEditor() {
   const { assignmentId, courseId } = useParams();
-  const params = useParams();
   const assignment = db.assignments.find(
     (assignment) => assignment._id === assignmentId
   );

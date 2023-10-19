@@ -35,7 +35,7 @@ function Home() {
 
                     <div style={{marginTop: 20}}>
                         <h5>Coming Up</h5>
-                        <a className="wd-fg-color-red float-end" style={{marginRight: -180}} href="#"> View Calendar</a>
+                        <a className="wd-fg-color-red float-end" style={{marginRight: -180}} href="https://www.youtube.com/"> View Calendar</a>
                         <i className="far fa-calendar-day float-end"></i>
                         <br />
                         <hr />
@@ -43,7 +43,7 @@ function Home() {
                         <div>
                             <i className="far fa-calendar-day" ></i>
                             <div className="calendar-event">
-                                <a className="wd-fg-color-red calendar-event-title" href="#">Lecture</a>
+                                <a className="wd-fg-color-red calendar-event-title" href="https://www.youtube.com/">Lecture</a>
                                 <p>CS4550.12641.202410<br />
                                     Sep 7 at 11:45am
                                 </p>
@@ -51,7 +51,7 @@ function Home() {
 
                             <i className="far fa-calendar-day"></i>
                             <div className="calendar-event">
-                                <a className="wd-fg-color-red calendar-event-title" href="#">Lecture</a>
+                                <a className="wd-fg-color-red calendar-event-title" href="https://www.youtube.com/">Lecture</a>
                                 <p>CS4550.12641.202410<br />
                                     Sep 11 at 11:45am
                                 </p>
@@ -59,7 +59,7 @@ function Home() {
 
                             <i className="far fa-calendar-day"></i>
                             <div className="calendar-event">
-                                <a className="wd-fg-color-red calendar-event-title" href="#">CS5610 06 SP23 Lecture</a>
+                                <a className="wd-fg-color-red calendar-event-title" href="https://www.youtube.com/">CS5610 06 SP23 Lecture</a>
                                 <p>CS4550.12641.202410<br />
                                     Sep 7 at 11:45am
                                 </p>

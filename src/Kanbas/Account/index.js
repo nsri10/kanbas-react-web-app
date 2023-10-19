@@ -1,8 +1,7 @@
 import "./index.css";
 import { BsFillPencilFill } from "react-icons/bs";
 import { BiUserCircle } from "react-icons/bi";
-import { Link, useParams } from "react-router-dom";
-import AccountEdit from "./AccountEditor/AccountEditor";
+import { Link } from "react-router-dom";
 function Account() {
     return(
         <div>
@@ -11,7 +10,7 @@ function Account() {
             <Link
             to={`/Kanbas/Account/AccountEditor/AccountEditor.js`}
           >
-            <a className="btn1 float-end">
+            <a className="btn1 float-end" href="https://www.youtube.com/">
                 <BsFillPencilFill/>
                         Edit Profile
                 </a>
@@ -22,7 +21,7 @@ function Account() {
                 <h2>Alice Wonderland</h2>
                 <br/>
                 <h3>Contact</h3>
-                No registered services, you can add some on the <a className="wd-fg-color-red" href="#">settings</a> page.
+                No registered services, you can add some on the <a className="wd-fg-color-red" href="https://www.youtube.com/">settings</a> page.
                 <br/>
                 <br/>
                 <h3>Biography</h3>

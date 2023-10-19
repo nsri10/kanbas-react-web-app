@@ -22,7 +22,7 @@ let variableArray1 = [
          <h2>Working with Arrays</h2>
          numberArray1 = {numberArray1.join("")}<br />
          stringArray1 = {stringArray1.join("")}<br />
-         variableArray1 = 25-312345string1string2<br />
+         variableArray1 = {variableArray1.join("")}<br />
         <ArrayIndexAndLength/>  
         <AddingAndRemovingDataToFromArrays/>
         <ForLoops/>

@@ -6,7 +6,7 @@ const threePlusOne = plusOne(3);
 return (
     <>
      <h3>Parenthesis and parameters</h3>
-     twoSquared = {square(2)}<br />
+     twoSquared = {twoSquared}<br />
      square(2) = {square(2)}<br />
      threePlusOne = {threePlusOne}<br />
      plusOne(3) = {threePlusOne}<br />
