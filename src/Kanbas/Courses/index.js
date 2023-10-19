@@ -8,6 +8,7 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor/AssignmentEditor";
 import Breadcrumb from 'rsuite/Breadcrumb';
 import { FiMenu } from "react-icons/fi";
+import { BiDotsVerticalRounded } from "react-icons/bi";
 function Courses() {
   const { courseId } = useParams();
   const course = db.courses.find((course) => course._id === courseId);
@@ -41,6 +42,23 @@ function Courses() {
  
             </Breadcrumb>
             </div>
+            <div>
+                        <button class="btn1 float-end" style={{marginRight: 20, paddingTop: 10, paddingBottom: 7}}>
+                        <BiDotsVerticalRounded/>
+                        </button>
+                        <button class="btn2 float-end" style={{marginRight: 65}}> Module</button>
+
+                        <div class="dropdown">
+                            <button class="btn1 dropdown-toggle float-end" style={{marginRight: -975}}
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="far fa-circle-check fa-2x"></i>
+                                Publish All 
+                            </button>
+                        </div>
+                        <button class="btn1 float-end" style={{marginRight: 265}}>View Progress</button>
+                        <button class="btn1 float-end" style={{marginRight: 400}}>Collapse All</button>
+
+                    </div>
       <div> 
         <div style={{marginTop: 40}}><CourseNavigation/></div>
         <div
@@ -48,6 +66,7 @@ function Courses() {
           style={{
             left: "300px",
             top: "100px",
+            right: "-100px",
           }}
         >
           <h1>Course {course.name}</h1>

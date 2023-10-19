@@ -35,8 +35,9 @@ function Home() {
 
                     <div style={{marginTop: 20}}>
                         <h5>Coming Up</h5>
-                        <a className="wd-fg-color-red float-end" style={{marginRight: 20}} href="#"> View Calendar</a>
+                        <a className="wd-fg-color-red float-end" style={{marginRight: -180}} href="#"> View Calendar</a>
                         <i className="far fa-calendar-day float-end"></i>
+                        <br />
                         <hr />
 
                         <div>
