@@ -9,9 +9,9 @@ import AssignmentEditor from "./Assignments/AssignmentEditor/AssignmentEditor";
 import Breadcrumb from 'rsuite/Breadcrumb';
 import { FiMenu } from "react-icons/fi";
 import { BiDotsVerticalRounded } from "react-icons/bi";
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   const curUrl = window.location.href;
   const split = curUrl.split("/");
   const curPage = split.pop();
