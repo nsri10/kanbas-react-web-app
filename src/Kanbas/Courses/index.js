@@ -48,7 +48,7 @@ function Courses({ courses }) {
                         <button class="btn2 float-end" style={{marginRight: 65}}> Module</button>
 
                         <div class="dropdown">
-                            <button class="btn1 dropdown-toggle float-end" style={{marginRight: -975}}
+                            <button class="btn1 dropdown-toggle float-end" style={{marginRight: -995}}
                                 type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="far fa-circle-check fa-2x"></i>
                                 Publish All 
