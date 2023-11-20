@@ -8,9 +8,21 @@ import AssignmentEditor from "./Assignments/AssignmentEditor/AssignmentEditor";
 import Breadcrumb from 'rsuite/Breadcrumb';
 import { FiMenu } from "react-icons/fi";
 import { BiDotsVerticalRounded } from "react-icons/bi";
-function Courses({ courses }) {
+import { useState, useEffect } from "react";
+import axios from "axios";
+function Courses() {
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  const URL = "http://localhost:4000/api/courses";
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
   const curUrl = window.location.href;
   const split = curUrl.split("/");
   const curPage = split.pop();
