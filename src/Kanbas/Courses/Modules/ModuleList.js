@@ -1,26 +1,21 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import {
   addModule,
-  deleteModule,
-  updateModule,
+  // deleteModule,
+  // updateModule,
   setModule,
   setModules,
 } from "./modulesReducer";
 import * as client from "./client";
 import { findModulesForCourse } from "./client";
+import { createModule } from "./client";
 function ModuleList() {
   const { courseId } = useParams();
-  useEffect(() => {
-    findModulesForCourse(courseId)
-      .then((modules) =>
-        dispatch(setModules(modules))
-    );
-  }, [courseId]);
   const handleDeleteModule = (moduleId) => {
     client.deleteModule(moduleId).then((status) => {
-      dispatch(deleteModule(moduleId));
+      dispatch(status);
     });
   };
   const modules = useSelector((state) => state.modulesReducer.modules);
@@ -33,9 +28,14 @@ function ModuleList() {
   };
   const handleUpdateModule = async () => {
     const status = await client.updateModule(module);
-    dispatch(updateModule(module));
+    dispatch(status);
   };
-
+  useEffect(() => {
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId, dispatch]);
 
   return (
     <div>         

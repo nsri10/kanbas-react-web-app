@@ -16,24 +16,24 @@ function WorkingWithArrays() {
     const [todos, setTodos] = useState([]);
     //3.5
     const postTodo = async () => {
-        const response = await axios.post(API, todo);
-        setTodos([...todos, response.data]);
+      const response = await axios.post(API, todo);
+      setTodos([...todos, response.data]);
     };
 
     const deleteTodo = async (todo) => {
         try {
-            const response = await axios.delete(`${API}/${todo.id}`);
-            setTodos(todos.filter((t) => t.id !== todo.id));
-        } catch (error) {
-            console.log(error);
-            setErrorMessage(error.response.data.message);
-        }
+          await axios.delete(`${API}/${todo.id}`);
+          setTodos(todos.filter((t) => t.id !== todo.id));
+      } catch (error) {
+          console.log(error);
+          setErrorMessage(error.response.data.message);
+      }
 
     };
 
     const updateTodo = async () => {
         try {
-            const response = await axios.put(
+            await axios.put(
                 `${API}/${todo.id}`, todo);
             setTodos(todos.map((t) => (
                 t.id === todo.id ? todo : t)));
@@ -58,22 +58,22 @@ function WorkingWithArrays() {
         setTodos(response.data);
     };
 
-    const removeTodo = async (todo) => {
-        const response = await axios
-            .get(`${API}/${todo.id}/delete`);
-        setTodos(response.data);
-    };
+    // const removeTodo = async (todo) => {
+    //     const response = await axios
+    //         .get(`${API}/${todo.id}/delete`);
+    //     setTodos(response.data);
+    // };
 
     const fetchTodoById = async (id) => {
         const response = await axios.get(`${API}/${id}`);
         setTodo(response.data);
     };
 
-    const updateTitle = async () => {
-        const response = await axios.get(
-            `${API}/${todo.id}/title/${todo.title}`);
-        setTodos(response.data);
-    };
+    // const updateTitle = async () => {
+    //     const response = await axios.get(
+    //         `${API}/${todo.id}/title/${todo.title}`);
+    //     setTodos(response.data);
+    // };
 
     return (
         <div>

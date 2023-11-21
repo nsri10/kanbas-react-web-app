@@ -9,7 +9,7 @@ import Courses from "./Courses";
 
 import store from "./store";
 
-import "./KanbasNavigation/nav.css"; // optionally import CSS files as needed
+import "./KanbasNavigation/index.css";
 
 function Kanbas() {
   const [courses, setCourses] = useState([]);
@@ -37,10 +37,9 @@ function Kanbas() {
   };
 
   const deleteCourse = async (courseId) => {
-    const response = await axios.delete(
+    await axios.delete(
       `${URL}/${course._id}`
     );
-
     setCourses(courses.filter((course) => course._id !== courseId));
   };
 
@@ -49,7 +48,7 @@ function Kanbas() {
       `${URL}/${course._id}`,
       course
     );
-    console.log(course);
+    console.log(response);
 
     setCourses(
       courses.map((c) => {
