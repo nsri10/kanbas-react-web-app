@@ -7,6 +7,9 @@ import KanbasNavigation from "./KanbasNavigation";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 
+import Account from "../project/users/account";
+import Signin from "../project/users/signin";
+
 import store from "./store";
 
 import "./KanbasNavigation/index.css";
@@ -69,6 +72,8 @@ function Kanbas() {
         <div style={{ width: "100%" }}>
           <Routes>
             <Route path="/" element={<Navigate to="Dashboard" />} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/account" element={<Account />} />
             <Route path="Account" element={<h1>Account</h1>} />
             <Route path="Dashboard" element={
               <Dashboard
